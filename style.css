@@ -20,15 +20,13 @@
 }
 :target{
 border: #c45454;
-box-shadow: 0 0 10px rgba(196, 84, 84, 0.5); }
+box-shadow: 0 0 10px rgba(196, 84, 84, 0.5);
+ }
 html{
   background-color: var(--HCOLOR);
 
 }
 body{
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
   background-color: var(--BG-COLOR);
   color: var(--FCOLOR);
   font-family: var(--FF);
@@ -92,4 +90,181 @@ header{
 }
 ul{
     list-style: none;
+}
+
+
+ nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  background-color:var(--FCOLOR) ;
+}
+ nav li a{
+  color:bisque;
+}
+ nav ul li{
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li:first-child h2{
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  padding-right: 3rem;
+  margin: 0;
+  padding-top: 0;
+}
+.outofscreen{
+  position: absolute;
+  left: -9999px;
+}
+.main__home{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap: 1rem;
+  text-align: center;
+  padding: 4rem 0;
+  border-bottom: var(--BORDER);
+  box-shadow: var(--BOX-SHADOW);
+  padding: 1rem;
+}
+
+figure{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: var(--BORDER);
+  box-shadow: var(--BOX-SHADOW);
+  padding: 1.5rem;
+  
+}
+figure img{
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main__home {
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap:1rem
+  }
+}
+.main__home a{
+  display: block;
+  border: var(--BORDER);
+  padding: 0.8rem;
+  width: 20vw;
+  border-radius: 5px;
+  background-color: var(--FCOLOR);
+  color: var(--HCOLOR);
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  
+}
+.main__home a:hover{
+  text-decoration: none;
+    opacity: 0.98;
+  text-decoration: none;
+  transform: scale(1.04); 
+}
+
+.main__about,.main__skills{
+display: flex;
+flex-direction: column;
+align-items: center;
+border-bottom:var(--BORDER);
+gap:1rem;
+padding-bottom: 3rem;
+text-align: center;
+}
+.main__skills ul li{
+  padding: 0.5rem 1rem;
+  background-color: var(--FCOLOR);
+  color: var(--HCOLOR);
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+border: var(--BORDER);
+transition: transform 0.3s ease;  
+}
+.main__skills ul li:hover{
+  transform: scale(101%);
+}
+
+
+.main__about p{
+  max-width: 50%;
+}
+.keep_togher{
+  white-space: nowrap;
+}
+.main__projects{
+  text-align: center;
+}
+.main__projects .projects_card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.projects_card div {
+  border: var(--BORDER);
+  box-shadow: var(--BOX-SHADOW);
+
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+transition: transform 0.3s ease;  
+}
+
+.projects_card div:hover{
+  transform: scale(105%);
+}
+
+
+
+.projects_card div img{
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+}
+.main__contact p,.main__contact h2{
+  text-align: center;
+}
+.main__contact ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem;
+}
+.main__contact ul li {
+  width: 40%;
+  text-align: center;
+  /* حذفنا place-items لأنها غير فعالة هنا */
+}
+
+.main__contact ul li a {
+  display: block; 
+  background-color: var(--FCOLOR);
+  color: var(--HCOLOR);
+  padding: 0.6rem;
+  border-radius: 4px; 
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.main__contact ul li a:hover {
+  opacity: 0.98;
+  text-decoration: none;
+  transform: scale(1.04); 
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  background-color: var(--FCOLOR);
+  color: var(--HCOLOR);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
 }
