@@ -1,0 +1,95 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*{
+  scroll-behavior: smooth;
+}
+:root
+{
+--BG-COLOR: #fdfdfd;
+--FCOLOR: #3b3b3b;
+--FF: sans-serif, monospace;
+--HCOLOR:#c45454;
+--LCOLOR:#706e6e;
+--FS: clamp(0.8rem, 2vw, 0.7rem);
+--SBGCOLOR:rgba(252, 216, 216, 0);
+--BORDER:1px solid black;
+--BOX-SHADOW: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+:target{
+border: #c45454;
+box-shadow: 0 0 10px rgba(196, 84, 84, 0.5); }
+html{
+  background-color: var(--HCOLOR);
+
+}
+body{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--BG-COLOR);
+  color: var(--FCOLOR);
+  font-family: var(--FF);
+  font-size: var(--FS);
+  font-weight: bolder;
+
+  border: var(--BORDER);
+  box-shadow: var(--BOX-SHADOW);
+
+}
+h1,h2,h3{
+  padding:1rem ;
+  margin-bottom:1rem;
+  color: var(--HCOLOR);
+}
+
+p{
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+
+}
+a{
+  color:var(--LCOLOR);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover{
+  opacity: 0.9;
+  text-decoration: underline;
+}
+button{
+  background-color: var(BG-COLOR);
+  color: var(FCOLOR);
+  border: var(BORDER);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(FCOLOR);
+  color: var(BG-COLOR);
+}
+button:hover{
+  background-color: var(FCOLOR);
+  color: var(BG-COLOR);
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section{
+  padding: 2rem 0;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+header{
+  text-align: center;
+}
+ul{
+    list-style: none;
+}
