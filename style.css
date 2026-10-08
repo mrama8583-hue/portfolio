@@ -58,12 +58,20 @@ a:hover{
   text-decoration: underline;
 }
 button{
+<<<<<<< HEAD
   background-color: var(--FCOLOR);
   color: var(--HCOLOR);
   border: var(BORDER);
   padding: 0.5rem 1rem;
   cursor: pointer;
   margin-bottom: 1rem;
+=======
+  background-color: var(BG-COLOR);
+  color: var(FCOLOR);
+  border: var(BORDER);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+>>>>>>> da94abe7932ebd9bd7c1872fe86b36ee406c1813
 }
 button:hover{
   background-color: var(FCOLOR);
@@ -237,6 +245,10 @@ transition: transform 0.3s ease;
 .main__contact ul li {
   width: 40%;
   text-align: center;
+<<<<<<< HEAD
+=======
+  /* حذفنا place-items لأنها غير فعالة هنا */
+>>>>>>> da94abe7932ebd9bd7c1872fe86b36ee406c1813
 }
 
 .main__contact ul li a {
@@ -264,3 +276,50 @@ footer{
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 768px) {
+  .main__home {
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap:1rem
+  }
+  .main__projects .projects_card{
+  display: grid;
+  grid-template-columns: 1fr
+}
+
+}@media screen and (max-width: 768px) {
+  .main__home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .main__home a {
+    width: 60%;
+    margin: 0 auto; 
+  }
+
+  .main__about p {
+    max-width: 90%; 
+  }
+
+  .main__projects .projects_card {
+    grid-template-columns: 1fr;
+  }
+
+  .main__contact ul {
+    flex-direction: column;  
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .main__contact ul li {
+    width: 80%;   
+  }
+}
+>>>>>>> da94abe7932ebd9bd7c1872fe86b36ee406c1813
