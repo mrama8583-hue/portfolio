@@ -328,3 +328,36 @@ body.dark-mode footer {
   background-color: #1a1a1a;
   color: #cccccc;
  }
+
+
+@media screen and (max-width: 768px) {
+  .main__home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .main__home a {
+    width: 60%;
+    margin: 0 auto; 
+  }
+
+  .main__about p {
+    max-width: 90%; 
+  }
+
+  .main__projects .projects_card {
+    grid-template-columns: 1fr;
+  }
+
+  .main__contact ul {
+    flex-direction: column; 
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .main__contact ul li {
+    width: 80%; 
+  }
+}
