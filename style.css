@@ -265,3 +265,66 @@ footer{
   width: 100%;
 }
 
+body.dark-mode {
+  background-color: #121212; 
+  color: #e0e0e0; 
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+  color: #ff9c9c; 
+}
+body.dark-mode nav ul {
+  background-color: #1a1a1a; 
+}
+body.dark-mode nav li a {
+  color: #fdfdfd;
+}
+
+body.dark-mode button {
+  background-color: #333333;
+  color: #fdfdfd;
+  border: 1px solid #555;
+}
+body.dark-mode button:hover {
+  background-color: #ff9c9c;
+  color: #121212;
+}
+
+body.dark-mode .main__home a {
+  background-color: #2a2a2a;
+  color: #ff9c9c;
+  border: 1px solid #444;
+}
+
+body.dark-mode .main__skills ul li {
+  background-color: #2a2a2a;
+  color: #ff9c9c;
+  border: 1px solid #444;
+}
+
+body.dark-mode .projects_card div {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .projects_card div p,
+body.dark-mode .projects_card div a {
+  color: #cccccc; 
+}
+
+body.dark-mode .main__contact ul li a {
+  background-color: #2a2a2a;
+  color: #ff9c9c;
+}
+body.dark-mode .main__contact ul li a:hover {
+  background-color: #333333;
+}
+
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #cccccc;
+ }
