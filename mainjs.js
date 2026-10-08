@@ -3,8 +3,12 @@ const body =   document.body
 darkModeButton.addEventListener('click',()=>{
 body.classList.toggle('dark-mode');
 if (!body.classList.contains('dark-mode')){
-  darkModeButton.innerHTML= 'Dark mode'
+  darkModeButton.textContent= 'Dark mode';
 }else{
-    darkModeButton.innerHTML= 'Light Mode'
+    darkModeButton.textContent= 'Light Mode';
 }
 })
+
+let currentYear = document.getElementById('currentYear');
+currentYear = dayjs().format('YYYY');
+currentYear.textContent = currentYear;
